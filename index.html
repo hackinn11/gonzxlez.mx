@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONZXLEZ - Página Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('concepto-de-red-segura.jpg_s1024x1024wisk20cy9FZ2yXwKJ4hUc15iUm8xAxmqz9exf9cQHmShX9jp_A.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+        .welcome::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.05); /* Reducción de visibilidad */
+        }
+        .welcome h1, .welcome h2 {
+            position: relative;
+            z-index: 1;
+        }
+        #welcome-text {
+            font-size: 2em;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        #main-title {
+            font-size: 3em;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .offer {
+            background-color: #1a1a1a;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome">
+        <h1 id="welcome-text">Bienvenido a mi página oficial</h1>
+        <h2 id="main-title">GONZXLEZ</h2>
+    </div>
+    <section class="section">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante en ingeniería en ciberseguridad, con más de 2 años llevando casos mayores de ciberataques creados por ciberdelincuentes intentando de robar informacion, ayudando a personas a proteger su información digital y en la protección de datos. También brindo asesoramientos sobre cómo manejar las redes, entre otros.</p>
+        <p> En este tiempo, he echo cursos personalizados por mi, llenandolo de informacion super importante para la vida digital de una persona.Me fui dedicando poco a poco a actualizar métodos que utilizan los ciberdelincuentes, proporcionando mayor seguridad.</p>
+    </section>
+    <section class="offer">
+        <h2>Curso Online vía WhatsApp</h2>
+        <p>¿Qué es lo que verás en este curso?</p>
+        <p>Aprenderás cómo proteger tus redes sociales, los métodos utilizados por ciberdelincuentes y cómo evitar caer en estafas. También analizaremos cómo empresas como Shein, Temu y AliExpress manejan tus datos y cómo estos pueden ser expuestos a terceros. Además, conocerás los métodos de ingeniería social y cómo se implementan.</p>
+        <p><strong>Precio:</strong> $20 USD - Acceso a grupo privado de WhatsApp.</p>
+        <p><strong>Asesoramientos privados:</strong> Protección de red WiFi y prevención de ciberataques.</p>
+    </section>
+    <section class="offer">
+        <h2>Curso Gratuito +10 años</h2>
+        <p>Compartiremos información sobre posibles estafas en redes sociales y cómo evitarlas. También abordaremos hábitos de seguridad en línea, explicando qué acciones pueden exponer información privada sin que lo notes. Este curso está diseñado para personas mayores de 10 años que desean mejorar su seguridad digital.</p>
+        <p>Analizaremos ejemplos reales de fraudes en internet y brindaremos consejos para una navegación más segura.</p>
+        <a href="https://chat.whatsapp.com/GulbofjZb5DLuN4Ubl5cqa" class="button" target="_blank">INGRESAR AL GRUPO DE WHATSAPP</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 GONZXLEZ - Todos los derechos reservados</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const welcomeText = document.getElementById("welcome-text");
+            const mainTitle = document.getElementById("main-title");
+            
+            setTimeout(() => {
+                welcomeText.style.animation = "fadeInUp 1.5s forwards";
+            }, 500);
+            
+            setTimeout(() => {
+                mainTitle.style.animation = "fadeInUp 2s forwards";
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
